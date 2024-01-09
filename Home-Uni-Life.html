@@ -3,55 +3,47 @@
 
 <head>
     <title>Contact Page</title>
-    <link rel="stylesheet" type="text/css" href="path/to/your/css/file.css">
+    <link rel="stylesheet" type="text/css" href="Css/styles.css">
 </head>
 
-<style>
-     body {
-            background-color: #f5f5f5;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 10;
-            box-sizing: border-box;
+<style></style>
+<body>
+    <div class="navbar">
+        <a href="Home-Uni-Life.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+</body>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<footer>
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <div class="container text-center">
+            <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+            
+        </div>
+        <p>&copy; 2024 Uni-Life. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    window.addEventListener("scroll", function () {
+        var footer = document.getElementById("footer");
+        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        var windowHeight = window.innerHeight;
+
+        // Set a threshold value based on your content height
+        var threshold = 500;
+
+        if (scrollPosition + windowHeight >= document.body.offsetHeight - threshold) {
+            footer.style.display = "block";
+        } else {
+            footer.style.display = "none";
         }
+    });
+</script>
 
-        .navbar {
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        height: 50px;
-    }
-
-    .navbar a {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-    }
-
-    .navbar a:hover {
-        color: orange;
-    }
-    .navbar {
-        background-color: black;
-        display: flex;
-        justify-content: center;
-    }
-
-    .navbar a {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-    }
-
-    .navbar a:hover {
-        color: orange;
-    }
-</style>
-
-<!-- Navbar begin -->
-<div class="navbar">
-    <a href="Home-Uni-Life.html">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="Contact.html">Contact</a>
-</div>
+</html>
